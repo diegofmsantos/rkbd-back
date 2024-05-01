@@ -1,0 +1,22 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Time {
+  id        Int    @id @default(autoincrement())
+  nome      String
+  instagram Float
+  twitter   Float
+  facebook  Float
+  youtube   Float
+  tiktok    Float
+  socios    Float
+  url       String
+
+  @@map("time")
+}
