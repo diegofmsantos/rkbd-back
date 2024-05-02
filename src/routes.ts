@@ -5,6 +5,8 @@ const router = Router()
 
 router.post('/times', async (req: Request, res: Response) => {
 
+    /* const { id, nome, instagram, twitter, facebook, youtube, tiktok, socios, url } = req.body as { id: number, nome: string, instagram: number, twitter: number, facebook: number, youtube: number, tiktok: number, socios: number, url: string } */
+
     const times = await prisma.time.createMany({
         data: [
             {
@@ -15,7 +17,7 @@ router.post('/times', async (req: Request, res: Response) => {
                 facebook: 232.019,
                 youtube: 35.200,
                 tiktok: 30.770,
-                socios: 7.858,
+                socios: 7858,
                 url: "abc.png"
             },
             {
@@ -26,7 +28,7 @@ router.post('/times', async (req: Request, res: Response) => {
                 facebook: 167.256,
                 youtube: 26.100,
                 tiktok: 128.861,
-                socios: 3.350,
+                socios: 3350,
                 url: "america-mg.png"
             },
             {
@@ -37,9 +39,9 @@ router.post('/times', async (req: Request, res: Response) => {
                 facebook: 232.501,
                 youtube: 40.685,
                 tiktok: 13.715,
-                socios: 5.216,
+                socios: 5216,
                 url: "america-rn.png"
-
+        
             },
             {
                 id: 4,
@@ -49,9 +51,9 @@ router.post('/times', async (req: Request, res: Response) => {
                 facebook: 1122.325,
                 youtube: 261.116,
                 tiktok: 508.601,
-                socios: 40.000,
+                socios: 40000,
                 url: "athletico-pr.png"
-
+        
             },
             {
                 id: 5,
@@ -61,7 +63,7 @@ router.post('/times', async (req: Request, res: Response) => {
                 facebook: 107.182,
                 youtube: 16.100,
                 tiktok: 130.346,
-                socios: 2.000,
+                socios: 2000,
                 url: "atletico-go.png"
             },
             {
@@ -72,7 +74,7 @@ router.post('/times', async (req: Request, res: Response) => {
                 facebook: 3272.761,
                 youtube: 664.674,
                 tiktok: 1554.999,
-                socios: 77.242,
+                socios: 77242,
                 url: "atletico-mg.png"
             },
             {
@@ -83,7 +85,7 @@ router.post('/times', async (req: Request, res: Response) => {
                 facebook: 260.425,
                 youtube: 36.800,
                 tiktok: 194.236,
-                socios: 9.792,
+                socios: 9792,
                 url: "avai.png"
             },
             {
@@ -94,7 +96,7 @@ router.post('/times', async (req: Request, res: Response) => {
                 facebook: 1159.025,
                 youtube: 310.291,
                 tiktok: 415.027,
-                socios: 65.000,
+                socios: 65000,
                 url: "bahia.png"
             },
             {
@@ -105,7 +107,7 @@ router.post('/times', async (req: Request, res: Response) => {
                 facebook: 1459.691,
                 youtube: 547.481,
                 tiktok: 874.882,
-                socios: 56.419,
+                socios: 56419,
                 url: "botafogo.png"
             },
             {
@@ -116,7 +118,7 @@ router.post('/times', async (req: Request, res: Response) => {
                 facebook: 94.143,
                 youtube: 31.250,
                 tiktok: 51.957,
-                socios: 1.285,
+                socios: 1285,
                 url: "botafogo-pb.png"
             },
             {
@@ -127,7 +129,7 @@ router.post('/times', async (req: Request, res: Response) => {
                 facebook: 396.445,
                 youtube: 30.382,
                 tiktok: 595.320,
-                socios: 7.500,
+                socios: 7500,
                 url: "bragantino.png"
             },
             {
@@ -149,7 +151,7 @@ router.post('/times', async (req: Request, res: Response) => {
                 facebook: 956.409,
                 youtube: 191.623,
                 tiktok: 549.744,
-                socios: 30.972,
+                socios: 30972,
                 url: "ceara.png"
             },
             {
@@ -160,7 +162,7 @@ router.post('/times', async (req: Request, res: Response) => {
                 facebook: 3561.622,
                 youtube: 43.546,
                 tiktok: 207.799,
-                socios: 7.264,
+                socios: 7264,
                 url: "chapecoense.png"
             },
             {
@@ -171,7 +173,7 @@ router.post('/times', async (req: Request, res: Response) => {
                 facebook: 11179.029,
                 youtube: 2125.433,
                 tiktok: 4177.247,
-                socios: 43.000,
+                socios: 43000,
                 url: "corinthians.png"
             },
             {
@@ -182,7 +184,7 @@ router.post('/times', async (req: Request, res: Response) => {
                 facebook: 528.792,
                 youtube: 117.753,
                 tiktok: 207.563,
-                socios: 35.000,
+                socios: 35000,
                 url: "coritiba.png"
             },
             {
@@ -193,7 +195,7 @@ router.post('/times', async (req: Request, res: Response) => {
                 facebook: 155.028,
                 youtube: 23.800,
                 tiktok: 51.038,
-                socios: 2.681,
+                socios: 2681,
                 url: "crb.png"
             },
             {
@@ -204,7 +206,7 @@ router.post('/times', async (req: Request, res: Response) => {
                 facebook: 207.725,
                 youtube: 24.471,
                 tiktok: 55.236,
-                socios: 17.200,
+                socios: 17200,
                 url: "criciuma.png"
             },
             {
@@ -215,7 +217,7 @@ router.post('/times', async (req: Request, res: Response) => {
                 facebook: 3102.939,
                 youtube: 599.808,
                 tiktok: 1114.840,
-                socios: 42.767,
+                socios: 42767,
                 url: "cruzeiro.png"
             },
             {
@@ -226,7 +228,7 @@ router.post('/times', async (req: Request, res: Response) => {
                 facebook: 173.012,
                 youtube: 36.234,
                 tiktok: 110.253,
-                socios: 2.549,
+                socios: 2549,
                 url: "csa.png"
             },
             {
@@ -237,7 +239,7 @@ router.post('/times', async (req: Request, res: Response) => {
                 facebook: 172.003,
                 youtube: 28.200,
                 tiktok: 111.130,
-                socios: 2.000,
+                socios: 2000,
                 url: "cuiaba.png"
             },
             {
@@ -248,7 +250,7 @@ router.post('/times', async (req: Request, res: Response) => {
                 facebook: 43.468,
                 youtube: 7.970,
                 tiktok: 4.264,
-                socios: 1.729,
+                socios: 1729,
                 url: "ferroviario.png"
             },
             {
@@ -259,7 +261,7 @@ router.post('/times', async (req: Request, res: Response) => {
                 facebook: 278.674,
                 youtube: 4.370,
                 tiktok: 5.258,
-                socios: 6.899,
+                socios: 6899,
                 url: "figueirense.png"
             },
             {
@@ -270,7 +272,7 @@ router.post('/times', async (req: Request, res: Response) => {
                 facebook: 13433.249,
                 youtube: 6908.742,
                 tiktok: 8093.729,
-                socios: 77.000,
+                socios: 77000,
                 url: "flamengo.png"
             },
             {
@@ -281,7 +283,7 @@ router.post('/times', async (req: Request, res: Response) => {
                 facebook: 1982.185,
                 youtube: 813.955,
                 tiktok: 2297.588,
-                socios: 61.592,
+                socios: 61592,
                 url: "fluminense.png"
             },
             {
@@ -292,7 +294,7 @@ router.post('/times', async (req: Request, res: Response) => {
                 facebook: 1012.206,
                 youtube: 251.314,
                 tiktok: 720.411,
-                socios: 37.574,
+                socios: 37574,
                 url: "fortaleza.png"
             },
             {
@@ -303,7 +305,7 @@ router.post('/times', async (req: Request, res: Response) => {
                 facebook: 328.588,
                 youtube: 115.891,
                 tiktok: 164.178,
-                socios: 6.400,
+                socios: 6400,
                 url: "goias.png"
             },
             {
@@ -314,7 +316,7 @@ router.post('/times', async (req: Request, res: Response) => {
                 facebook: 3492.374,
                 youtube: 930.909,
                 tiktok: 1177.113,
-                socios: 112.075,
+                socios: 112075,
                 url: "gremio.png"
             },
             {
@@ -325,7 +327,7 @@ router.post('/times', async (req: Request, res: Response) => {
                 facebook: 109.075,
                 youtube: 16.133,
                 tiktok: 177.924,
-                socios: 1.083,
+                socios: 1083,
                 url: "guarani.png"
             },
             {
@@ -336,7 +338,7 @@ router.post('/times', async (req: Request, res: Response) => {
                 facebook: 2618.496,
                 youtube: 388.770,
                 tiktok: 707.450,
-                socios: 140.000,
+                socios: 140000,
                 url: "internacional.png"
             },
             {
@@ -347,7 +349,7 @@ router.post('/times', async (req: Request, res: Response) => {
                 facebook: 225.149,
                 youtube: 9.790,
                 tiktok: 22.497,
-                socios: 11.000,
+                socios: 11000,
                 url: "joinville.png"
             },
             {
@@ -358,7 +360,7 @@ router.post('/times', async (req: Request, res: Response) => {
                 facebook: 210.060,
                 youtube: 17.500,
                 tiktok: 104.882,
-                socios: 7.566,
+                socios: 7566,
                 url: "juventude.png"
             },
             {
@@ -369,7 +371,7 @@ router.post('/times', async (req: Request, res: Response) => {
                 facebook: 214.914,
                 youtube: 34.496,
                 tiktok: 127.168,
-                socios: 24.785,
+                socios: 24785,
                 url: "nautico.png"
             },
             {
@@ -380,7 +382,7 @@ router.post('/times', async (req: Request, res: Response) => {
                 facebook: 5119.063,
                 youtube: 2138.316,
                 tiktok: 3616.823,
-                socios: 176.521,
+                socios: 176521,
                 url: "palmeiras.png"
             },
             {
@@ -391,7 +393,7 @@ router.post('/times', async (req: Request, res: Response) => {
                 facebook: 206.644,
                 youtube: 29.004,
                 tiktok: 137.507,
-                socios: 3.000,
+                socios: 3000,
                 url: "parana.png"
             },
             {
@@ -402,7 +404,7 @@ router.post('/times', async (req: Request, res: Response) => {
                 facebook: 464.365,
                 youtube: 194.821,
                 tiktok: 284.955,
-                socios: 6.901,
+                socios: 6901,
                 url: "paysandu.png"
             },
             {
@@ -413,7 +415,7 @@ router.post('/times', async (req: Request, res: Response) => {
                 facebook: 289.398,
                 youtube: 22.900,
                 tiktok: 57.580,
-                socios: 2.000,
+                socios: 2000,
                 url: "ponte preta.png"
             },
             {
@@ -435,7 +437,7 @@ router.post('/times', async (req: Request, res: Response) => {
                 facebook: 472.243,
                 youtube: 186.721,
                 tiktok: 144.916,
-                socios: 2.842,
+                socios: 2842,
                 url: "remo.png"
             },
             {
@@ -446,7 +448,7 @@ router.post('/times', async (req: Request, res: Response) => {
                 facebook: 189.665,
                 youtube: 42.200,
                 tiktok: 143.231,
-                socios: 3.716,
+                socios: 3716,
                 url: "sampaio correa.png"
             },
             {
@@ -457,7 +459,7 @@ router.post('/times', async (req: Request, res: Response) => {
                 facebook: 537.457,
                 youtube: 90.445,
                 tiktok: 206.503,
-                socios: 7.300,
+                socios: 7300,
                 url: "santa cruz.png"
             },
             {
@@ -468,7 +470,7 @@ router.post('/times', async (req: Request, res: Response) => {
                 facebook: 4082.787,
                 youtube: 1269.152,
                 tiktok: 2110.505,
-                socios: 40.773,
+                socios: 40773,
                 url: "santos.png"
             },
             {
@@ -479,7 +481,7 @@ router.post('/times', async (req: Request, res: Response) => {
                 facebook: 6988.605,
                 youtube: 1901.583,
                 tiktok: 1799.573,
-                socios: 55.058,
+                socios: 55058,
                 url: "sao paulo.png"
             },
             {
@@ -490,7 +492,7 @@ router.post('/times', async (req: Request, res: Response) => {
                 facebook: 1089.914,
                 youtube: 187.753,
                 tiktok: 893.782,
-                socios: 17.100,
+                socios: 17100,
                 url: "sport.png"
             },
             {
@@ -501,7 +503,7 @@ router.post('/times', async (req: Request, res: Response) => {
                 facebook: 33.809,
                 youtube: 19.500,
                 tiktok: 14.690,
-                socios: 1.252,
+                socios: 1252,
                 url: "treze.png"
             },
             {
@@ -512,7 +514,7 @@ router.post('/times', async (req: Request, res: Response) => {
                 facebook: 3188.083,
                 youtube: 1300.622,
                 tiktok: 2906.164,
-                socios: 45.000,
+                socios: 45000,
                 url: "vasco.png"
             },
             {
@@ -523,7 +525,7 @@ router.post('/times', async (req: Request, res: Response) => {
                 facebook: 132.790,
                 youtube: 39.100,
                 tiktok: 173.054,
-                socios: 3.430,
+                socios: 3430,
                 url: "vila nova.png"
             },
             {
@@ -534,7 +536,7 @@ router.post('/times', async (req: Request, res: Response) => {
                 facebook: 757.568,
                 youtube: 141.534,
                 tiktok: 564.931,
-                socios: 31.329,
+                socios: 31329,
                 url: "vitoria.png"
             }
         ]
