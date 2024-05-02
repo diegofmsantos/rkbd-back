@@ -1,24 +1,11 @@
 import { Request, Response, Router } from "express";
 import { prisma } from "./prisma/prisma";
 
-type Data = {
-    id: number,
-    nome: string,
-    instagram: number,
-    twitter: number,
-    facebook: number,
-    youtube: number,
-    tiktok: number,
-    socios: number,
-    url: string
-}
-
-
 const router = Router()
 
 router.post('/times', async (req: Request, res: Response) => {
 
-    const allTimes = await prisma.time.createMany({
+    const times = await prisma.time.createMany({
         data: [
             {
                 id: 1,
@@ -552,7 +539,7 @@ router.post('/times', async (req: Request, res: Response) => {
             }
         ]
     })
-    res.send(allTimes)
+    res.send(times)
 })
 
 router.get('/times', async (req: Request, res: Response) => {

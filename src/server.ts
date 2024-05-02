@@ -9,5 +9,5 @@ server.use(mainRoutes)
 
 const port = process.env.PORT || 4000
 server.listen(port, () => {
-    console.log(`🚀 Servidor rodando em http://localhost/${port}`)
+    console.log(`🚀 Servidor rodando em http://localhost:${port}`)
 })
